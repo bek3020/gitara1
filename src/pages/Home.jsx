@@ -15,7 +15,8 @@ import Logo5 from "../assets/img/logo/5.png";
 import Logo6 from "../assets/img/logo/6.png";
 import Logo7 from "../assets/img/logo/7.png";
 import Logo8 from "../assets/img/logo/8.png";
-import Card12 from '../assets/img/card12.png';
+import Card12 from "../assets/img/card12.png";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -23,6 +24,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import Cards from "./Cards";
+import Contakt from "./Contakt";
 
 const Home = () => {
   return (
@@ -188,6 +190,81 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="my-12 flex items-center justify-center flex-col bg-gray-900 text-white p-8">
+        <h2 className="text-bold text-3xl border-b pb-2 border-amber-700 mb-8">
+          Услуги
+        </h2>
+        <div className="flex justify-center space-x-6 w-full max-w-6xl">
+          <div className="group relative w-1/3 h-96 overflow-hidden rounded-lg shadow-xl cursor-pointer">
+            <img
+              src="path/to/image_29cd68_1.jpg"
+              alt="Обучение"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-70 transition-all duration-500"></div>
+
+            <div className="absolute inset-0 flex flex-col justify-end p-6 text-center transition-all duration-500">
+              <h3 className="text-2xl font-bold uppercase z-10">ОБУЧЕНИЕ</h3>
+
+              <div className="absolute inset-0 flex items-center justify-center p-6 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-gray-300">
+                  Уроки игры на гитаре для всех уровней. Индивидуальный подход и
+                  профессиональные преподаватели.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative w-1/3 h-96 overflow-hidden rounded-lg shadow-xl cursor-pointer">
+            <img
+              src="path/to/image_29cd68_2_center.jpg"
+              alt="Мастерская"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-70 transition-all duration-500"></div>
+
+            <div className="absolute inset-0 flex flex-col justify-end p-6 text-center transition-all duration-500">
+              <h3 className="text-2xl font-bold uppercase z-10">
+                ОБСЛУЖИВАНИЕ
+              </h3>
+
+              <div className="absolute inset-0 flex flex-col justify-center items-center p-6 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-md leading-relaxed text-gray-200 mb-6">
+                  В нашей гитарной мастерской мы оказываем полный спектр услуг
+                  по ремонту и обслуживанию музыкальных инструментов, в том
+                  числе и изготовление на заказ.
+                </p>
+                <a
+                  href="#"
+                  className="text-amber-500 font-bold border-b border-amber-500 hover:text-amber-400 transition-colors"
+                >
+                  ПОКАЗАТЬ ЕЩЁ
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="group relative w-1/3 h-96 overflow-hidden rounded-lg shadow-xl cursor-pointer">
+            <img
+              src="path/to/image_29cd68_3.jpg"
+              alt="Ремонт"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-70 transition-all duration-500"></div>
+
+            <div className="absolute inset-0 flex flex-col justify-end p-6 text-center transition-all duration-500">
+              <h3 className="text-2xl font-bold uppercase z-10">РЕМОНТ</h3>
+
+              <div className="absolute inset-0 flex items-center justify-center p-6 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-sm text-gray-300">
+                  Профессиональный ремонт гитар любой сложности. Настройка и
+                  обслуживание инструмента.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Contakt />
     </div>
   );
 };

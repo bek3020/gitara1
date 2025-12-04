@@ -86,7 +86,7 @@ const Header = () => {
               <NavLink to="#">ОБУЧЕНИЕ</NavLink>
             </li>
             <li className="cursor-pointer hover:text-orange-600">
-              <NavLink to="#">КОНТАКТЫ</NavLink>
+              <NavLink to="/contakt">КОНТАКТЫ</NavLink>
             </li>
             <li className="cursor-pointer hover:text-orange-600">
               <NavLink to="#">ОПТ</NavLink>
